@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@200;400&display=swap');
+
+
+
+/* Geral */
+
+:root{
+    --cor-cabecalho: rgb(255, 48, 117);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.sessão-geral{
+    background-color: pink;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.658);
+    border-radius: 15px;
+    margin: 7px;
+}
+
+.moldura{
+    height: 300px;
+    width: 200px;
+    background-color: yellowgreen;
+    flex-shrink: 0;
+}
+
+img{
+    height: 250px;
+    width: 160px;
+}
+
+/* Cabeçalho */
+
+header{
+    text-align: center;
+    background-color: rgb(255, 48, 117);
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+}
+
+header h1{
+    font-family: 'Kalnia', serif;
+    font-weight: 200;
+    font-size: 40px;
+}
+
+header p{
+    font-family: 'Kalnia', serif;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+/* Corpo 1 */
+
+.marketing{
+    height: 300px;
+    background-image: url(img/tiro-do-estudio-da-mulher-negra-bonita-com-o-saco-de-compras-branco-que-esta-sobre-o-fundo-amarelo-olhar-na-moda-primavera-na-moda.jpg);
+    background-position: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+
+.marketing h1{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+.marketing span{
+    color: var(--cor-cabecalho);
+}
+
+.conteiner{
+    position: relative;
+    max-width: 250px;
+    margin: auto;
+}
+
+.galeria-estendida{
+    overflow-x: auto;
+}
+
+.galeria{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5px;
+}
+
+.esquerda, .direita{
+    position: absolute;
+    top: 42%;
+    right: auto;
+
+    background-color: rgba(0, 0, 0, 0.616);
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    color: white;
+    font-size: 25px;
+}
+
+.direita{
+    left: auto;
+    right: 0;
+}
+
+/**/
