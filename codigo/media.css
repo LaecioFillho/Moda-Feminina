@@ -1,0 +1,165 @@
+@charset "UTF-8";
+@media screen and (max-width: 640px) {
+
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;400;600&display=swap');
+
+
+/* Geral */
+
+:root{
+    --cor-cabecalho: rgb(255, 48, 117);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.sessão-geral{
+    background-color: var(--cor-cabecalho);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.658);
+    border-radius: 15px;
+    margin: 7px;
+}
+
+.moldura{
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.699);
+    flex-shrink: 0;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+
+img{
+    height: 280px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.classifica-pratileiras{
+    text-align: center;
+    color: white;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    margin: 30px 0px;
+}
+
+/* Cabeçalho */
+
+header{
+    text-align: center;
+    background-color: rgb(255, 48, 117);
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+}
+
+header h1{
+    font-family: 'Kalnia', serif;
+    font-weight: 200;
+    font-size: 40px;
+}
+
+header p{
+    font-family: 'Kalnia', serif;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+/* Corpo 1 */
+
+.marketing{
+    height: 300px;
+    background-image: url(img/img-fundo/img-mulher-fundo1.jpg);
+    background-position: center;
+    background-size: 500px;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.marketing h1{
+    font-size: 30px;
+    margin: 15px;
+    text-align: center;
+}
+
+.marketing span{
+    color: var(--cor-cabecalho);
+}
+
+/*Corpo 2 com os Slaides de fotos*/
+
+.conteiner{
+    position: relative;
+    max-width: 320px;
+    min-width: 280px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.galeria-estendida{
+    overflow-x: auto;
+    border-radius: 10px;
+}
+
+.galeria{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5px;
+}
+
+/* Botões dos slides */
+
+.esquerda, .direita{
+    position: absolute;
+    top: 42%;
+    right: auto;
+
+    background-color: rgba(0, 0, 0, 0.616);
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+    color: white;
+    font-size: 25px;
+}
+
+.direita{
+    left: auto;
+    right: 0;
+}
+
+/*Textos das molduras*/
+
+.moldura p{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 14px;
+}
+
+.moldura .descrição-produto{
+    margin-top: 5px;
+    font-size: 17px;  
+}
+
+.moldura h3{
+    font-family: 'Noto Sans TC', sans-serif;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/**/
+    
+}
