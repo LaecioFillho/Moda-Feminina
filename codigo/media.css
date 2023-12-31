@@ -1,178 +1,200 @@
 @charset "UTF-8";
 @media screen and (max-width: 640px) {
 
-/* Fontes */
-@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@200;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;400;600&display=swap');
+    /* Fontes */
+    @import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@200;400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 
-/* Geral */
 
-:root{
-    --cor-cabecalho: rgb(255, 48, 117);
-}
+    /* Geral */
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+    :root{
+        --cor-cabecalho: rgb(255, 48, 117);
+    }
 
-.sessão-geral{
-    background-color: var(--cor-cabecalho);
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.658);
-    border-radius: 15px;
-    margin: 7px;
-    padding-bottom: 10px;
-}
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
 
-.moldura{
-    height: 430px;
-    width: 300px;
-    background-color: white;
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.699);
-    flex-shrink: 0;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5px;
-}
+    .sessão-geral{
+        background-color: var(--cor-cabecalho);
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.658);
+        border-radius: 15px;
+        margin: 7px;
+        padding-bottom: 10px;
+    }
 
-img{
-    height: 300px;
-    width: 200px;
-    display: block;
-    margin: auto;
-    border-radius: 5px;
-}
+    .moldura{
+        height: 430px;
+        width: 300px;
+        background-image: linear-gradient(to bottom, white, transparent 60%);
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.699);
+        flex-shrink: 0;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 5px;
+    }
 
-.classifica-pratileiras{
-    text-align: center;
-    color: white;
-    font-family: 'Noto Sans TC', sans-serif;
-    font-size: 30px;
-    font-weight: 100;
-    margin: 30px 0px;
-}
+    img{
+        height: 300px;
+        width: 200px;
+        display: block;
+        margin: auto;
+        border-radius: 5px;
+    }
 
-/* Cabeçalho */
+    .classifica-pratileiras{
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.733);
+        border-radius: 15px;
+        padding: 3px;
+        text-align: center;
+        color: white;
+        font-family: 'Kalnia', cursive;
+        font-size: 25px;
+        font-weight: 100;
+        margin: 30px 10px;
+    }
 
-header{
-    text-align: center;
-    background-color: rgb(255, 48, 117);
-    border-top-left-radius: 10px ;
-    border-top-right-radius: 10px ;
-}
+    /* Cabeçalho */
 
-header h1{
-    font-family: 'Kalnia', serif;
-    font-weight: 200;
-    font-size: 40px;
-}
+    header{
+        text-align: center;
+        background-color: rgb(255, 48, 117);
+        border-top-left-radius: 10px ;
+        border-top-right-radius: 10px ;
+    }
 
-header p{
-    font-family: 'Kalnia', serif;
-    font-size: 25px;
-    font-weight: 200;
-}
+    header h1{
+        font-family: 'Kalnia', serif;
+        font-weight: 200;
+        font-size: 40px;
+    }
 
-/* Corpo 1 */
+    header p{
+        font-family: 'Kalnia', serif;
+        font-size: 25px;
+        font-weight: 200;
+    }
 
-.marketing{
-    height: 300px;
-    background-image: url(img/img-fundo/img-mulher-fundo1.jpg);
-    background-position: center;
-    background-size: 500px;
-    background-repeat: no-repeat;
-    margin-bottom: 10px;
+    /* Corpo 1 */
 
-    display: flex;
-    justify-content: space-between;
-}
+    .marketing{
+        height: 300px;
+        background-image: url(img/img-fundo/img-mulher-fundo1.jpg);
+        background-position: center;
+        background-size: 500px;
+        background-repeat: no-repeat;
+        margin-bottom: 10px;
 
-.marketing h1{
-    font-size: 20px;
-    margin: 15px;
-    text-align: center;
-}
+        display: flex;
+        justify-content: space-between;
+    }
 
-.marketing span{
-    color: var(--cor-cabecalho);
-}
+    .marketing h1{
+        font-size: 20px;
+        margin: 15px;
+        text-align: center;
+    }
 
-/*Corpo 2 com os Slaides de fotos*/
+    .marketing span{
+        color: var(--cor-cabecalho);
+    }
 
-.conteiner{
-    position: relative;
-    max-width: 320px;
-    min-width: 280px;
-    border-radius: 10px;
-    margin: auto;
-}
+    /*Corpo 2 com os Slaides de fotos*/
 
-.galeria-estendida{
-    overflow-x: auto;
-    border-radius: 10px;
-}
+    .conteiner{
+        position: relative;
+        max-width: 320px;
+        min-width: 280px;
+        border-radius: 10px;
+        margin: auto;
+    }
 
-.galeria{
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 5px;
-}
+    .galeria-estendida{
+        overflow-x: auto;
+        border-radius: 10px;
+    }
 
-/* Botões dos slides */
+    .galeria{
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 5px;
+    }
 
-.esquerda, .direita{
-    position: absolute;
-    top: 42%;
-    right: auto;
+    /* Botões dos slides */
 
-    background-color: rgba(0, 0, 0, 0.616);
-    border: none;
-    border-radius: 50%;
-    padding: 5px;
-    color: white;
-    font-size: 25px;
-}
+    .esquerda, .direita{
+        position: absolute;
+        top: 42%;
+        right: auto;
 
-.direita{
-    left: auto;
-    right: 0;
-}
+        background-color: rgba(0, 0, 0, 0.616);
+        border: none;
+        border-radius: 50%;
+        padding: 5px;
+        color: white;
+        font-size: 15px;
+        font-family: 'Noto Sans TC', sans-serif;
 
-/*Textos das molduras*/
+    }
 
-.moldura p{
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 400;
-    text-align: center;
-    font-size: 14px;
-}
+    .direita{
+        left: auto;
+        right: 0;
+    }
 
-.moldura .descrição-produto{
-    margin-top: 5px;
-    font-size: 17px;  
-}
+    /*Textos das molduras*/
 
-.moldura h3{
-    font-family: 'Noto Sans TC', sans-serif;
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 5px;
-}
+    .moldura p{
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        font-size: 14px;
+    }
 
-/**/
+    .moldura .descrição-produto{
+        margin-top: 5px;
+        font-size: 17px;  
+    }
 
-.rodape{
-    background-color: var(--cor-cabecalho);
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.658);
-    border-radius: 15px;
-    margin: 7px;
-    padding: 10px;
-}
+    .moldura h3{
+        font-family: 'Noto Sans TC', sans-serif;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
 
-footer p{
-    text-align: center;
-}
+    /**/
+
+    .rodape{
+        background-color: var(--cor-cabecalho);
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.658);
+        border-radius: 15px;
+        margin: 7px;
+        padding: 10px;
+    }
+
+    footer p{
+        text-align: center;
+        font-family: 'Noto Sans TC', sans-serif;
+        color: white;
+    }
+
+    footer div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    footer img{
+        height: 30px;
+        width: 30px;
+        margin: 5px;
+    }
     
 }
