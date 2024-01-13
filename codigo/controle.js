@@ -5,9 +5,9 @@ const maxItens = itens.length
 
 setas.forEach(setas =>{
     setas.addEventListener('click', () => {
-        const isLeft = setas.classList.contains('.esquerda')
+        const isLeft = setas.classList.contains('.direita')
 
-        if (isLeft) {
+        if (isLeft === 6) {
             currentItem -= 1
         } else {
             currentItem +=1

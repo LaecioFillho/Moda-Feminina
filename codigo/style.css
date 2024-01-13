@@ -6,7 +6,7 @@
 /* Geral */
 
 :root{
-    --cor-cabecalho: rgb(255, 48, 117);
+    --cor-geral: rgb(255, 48, 117);
 }
 
 *{
@@ -16,22 +16,43 @@
 }
 
 .sessão-geral{
-    background-color: pink;
+    background-color: var(--cor-geral);
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.658);
     border-radius: 15px;
     margin: 7px;
 }
 
 .moldura{
-    height: 300px;
-    width: 200px;
-    background-color: pink;
+    height: 430px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.666);
     flex-shrink: 0;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px;
 }
 
 img{
-    height: 250px;
-    width: 160px;
+    height: 300px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.classifica-pratileiras{
+    width: 300px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.493);
+    border-radius: 15px;
+    padding: 3px;
+    text-align: center;
+    color: white;
+    font-family: 'Kalnia', cursive;
+    font-size: 20px;
+    font-weight: 100;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 /* Cabeçalho */
@@ -41,44 +62,115 @@ header{
     background-color: rgb(255, 48, 117);
     border-top-left-radius: 10px ;
     border-top-right-radius: 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px 5px 15px;
+}
+
+.icones-home{
+    display: flex;
+}
+
+.icones-home img{
+    height: 35px;
+    width: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.logo{
+    margin-right: 35px;
 }
 
 header h1{
     font-family: 'Kalnia', serif;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 40px;
 }
 
 header p{
     font-family: 'Kalnia', serif;
     font-size: 25px;
-    font-weight: 200;
+    font-weight: 400;
 }
+
+.menu .barras{
+    background-color: black;
+    height: 5px;
+    width: 30px;
+    margin: 5px;
+    border-radius: 3px;
+}
+
 
 /* Corpo 1 */
 
 .marketing{
-    height: 300px;
-    background-image: url(img/tiro-do-estudio-da-mulher-negra-bonita-com-o-saco-de-compras-branco-que-esta-sobre-o-fundo-amarelo-olhar-na-moda-primavera-na-moda.jpg);
-    background-position: center;
-    background-size: 500px;
+    height: 600px;
+    background-image: url(img/img-fundo/img-mulher-fundo1.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .marketing h1{
-    font-size: 30px;
-    margin-left: 20px;
+    font-size: 80px;
+    margin: 20px;
+    text-align: center;
 }
 
 .marketing span{
-    color: var(--cor-cabecalho);
+    color: var(--cor-geral);
+}
+
+/* sessão-roupas */
+
+.nav-pratileiras{
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.500);
+    color: white;
+    font-size: 20px;
+    font-family: 'Kalnia', serif;
+    font-weight: 400;
+    margin-bottom: 10px;
+    overflow-x: auto;
+}
+
+.tipos{
+    display: flex;
+    flex-flow: row nowrap;
+    margin: auto;
+    flex-shrink: 0;
+    transition: 0.3s;
+    padding: 10px; 
+}
+
+.tipos:hover{
+    background-color: rgba(255, 48, 117, 0.486);
+    border-bottom: 4px solid var(--cor-geral);
+}
+
+.sessão-roupas{
+    display: flex;
 }
 
 .conteiner{
     position: relative;
-    max-width: 250px;
+    max-width: 320px;
     margin: auto;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.523);
 }
 
 .galeria-estendida{
@@ -109,4 +201,60 @@ header p{
     right: 0;
 }
 
-/**/
+/* Textos das molduras*/
+
+.moldura p{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 14px;
+}
+
+.moldura .descrição-produto{
+    margin-top: 5px;
+    font-size: 17px;  
+}
+
+.moldura h3{
+    font-family: 'Noto Sans TC', sans-serif;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* Rodapé */
+
+.rodape{
+    background-color: var(--cor-geral);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.658);
+    border-radius: 15px;
+    margin: 7px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+footer h2{
+    color: white;
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+footer p{
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    color: white;
+    margin: 5px;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+footer img{
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}

@@ -32,9 +32,8 @@
         height: 430px;
         width: 300px;
         background-image: linear-gradient(to bottom, white, transparent 60%);
-        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.699);
         flex-shrink: 0;
-        border-radius: 10px;
+        border-radius: 15px;
         padding: 10px;
         margin: 5px;
     }
@@ -48,15 +47,15 @@
     }
 
     .classifica-pratileiras{
-        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.733);
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.493);
         border-radius: 15px;
         padding: 3px;
         text-align: center;
         color: white;
         font-family: 'Kalnia', cursive;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 100;
-        margin: 30px 10px;
+        margin: 30px 30px;
     }
 
     /* Cabeçalho */
@@ -66,6 +65,21 @@
         background-color: rgb(255, 48, 117);
         border-top-left-radius: 10px ;
         border-top-right-radius: 10px ;
+    }
+
+    .icones-home{
+        display: flex;
+    }
+
+    .icones-home img{
+        height: 25px;
+        width: 25px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .logo{
+        margin-right: 25px;
     }
 
     header h1{
@@ -80,17 +94,26 @@
         font-weight: 200;
     }
 
+    .menu .barras{
+        background-color: rgba(0, 0, 0, 0.74);
+        height: 4px;
+        width: 25px;
+        margin: 3px;
+        border-radius: 3px;
+    }
+
     /* Corpo 1 */
 
     .marketing{
         height: 300px;
         background-image: url(img/img-fundo/img-mulher-fundo1.jpg);
         background-position: center;
+        background-attachment: scroll;
         background-size: 500px;
         background-repeat: no-repeat;
-        margin-bottom: 10px;
 
         display: flex;
+        align-items: normal;
         justify-content: space-between;
     }
 
@@ -106,12 +129,31 @@
 
     /*Corpo 2 com os Slaides de fotos*/
 
+    /* sessão-roupas */
+
+    .nav-pratileiras{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgba(0, 0, 0, 0.500);
+        font-size: 15px;
+        color: white;
+        margin-bottom: 10px;
+        overflow-x: auto;
+    }
+
+    .sessão-roupas{
+        display: flex;
+        flex-direction: column;
+    }
+
     .conteiner{
         position: relative;
         max-width: 320px;
         min-width: 280px;
-        border-radius: 10px;
+        border-radius: 15px;
         margin: auto;
+        margin-bottom: 20px;
     }
 
     .galeria-estendida{
@@ -178,6 +220,10 @@
         padding: 10px;
     }
 
+    footer h2{
+        font-size: 17px;
+    }
+
     footer p{
         text-align: center;
         font-family: 'Noto Sans TC', sans-serif;
@@ -188,7 +234,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 15px;
+        margin-bottom: 5px;
     }
 
     footer img{
